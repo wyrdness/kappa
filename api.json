@@ -1,10 +1,8 @@
 {
-  "category": "CRYPTID/ENTITY_SPIRIT",
-
   "meta": {
     "version": "1.0.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-01-14",
+    "last_updated": "2026-02-13",
     "repository": "https://github.com/wyrdness/kappa",
     "maintainers": [
       {
@@ -18,363 +16,111 @@
       "content": "CC-BY-4.0"
     }
   },
-
   "phenomenon": {
     "id": "kappa",
     "name": "Kappa",
-    "aliases": [
-      {
-        "name": "河童",
-        "language": "Japanese (Kanji)",
-        "meaning": "river child"
-      },
-      {
-        "name": "Kawatarō",
-        "language": "Japanese",
-        "region": "Various regions",
-        "meaning": "river boy"
-      },
-      {
-        "name": "Kawako",
-        "language": "Japanese",
-        "region": "Various regions",
-        "meaning": "river child"
-      },
-      {
-        "name": "Gatarō",
-        "language": "Japanese",
-        "region": "Kyushu"
-      }
-    ],
-    "category": "CRYPTID/ENTITY_SPIRIT",
-    "subcategory": "Japanese Yokai",
+    "aliases": [],
+    "category": "|",
+    "subcategory": "| Relationship |",
     "tags": [
-      "yokai",
-      "water-spirit",
-      "japanese-folklore",
-      "cryptid",
-      "dangerous",
-      "cultural-icon",
-      "cautionary-tale",
-      "living-tradition"
+      "folklore",
+      "mythology"
     ],
-    "status": "living-folklore",
+    "status": "documented",
     "description": {
-      "summary": "A Japanese water demon (yokai) described as turtle-like, human-sized creature with a beak, webbed hands and feet, and a distinctive bowl-like depression on its head that holds water. Kappa are dangerous, known for drowning people (especially children) and challenging them to sumo wrestling, but can be outwitted and love cucumbers.",
-      "full": "The kappa (河童, 'river child') is one of the most famous yokai in Japanese folklore. Depicted as amphibious, turtle-like creatures roughly the size of a human child, kappa have several distinctive features: a bowl-like depression (sara) on top of their heads that holds water, a turtle-like shell on their backs, webbed hands and feet, and a beak-like mouth. The water in the head bowl is the source of their power—if it spills, the kappa becomes weak or dies. Kappa are primarily water dwellers, inhabiting rivers, ponds, and streams throughout Japan. They are known for being mischievous and dangerous, particularly to children, often drowning victims by pulling them underwater. However, kappa are also depicted as intelligent and honorable, loving cucumbers, respecting politeness, and keeping their promises. The kappa serves multiple cultural roles: a water safety warning for children, an explanation for drownings, and a beloved cultural icon appearing in modern media, mascots, and warning signs near water."
+      "summary": "The **kappa** (河童, \\\"river child\\\") is one of the most famous yokai in Japanese folklore.",
+      "full": "The **kappa** (河童, \\\"river child\\\") is one of the most famous yokai in Japanese folklore. Depicted as amphibious, turtle-like creatures roughly the size of a human child, kappa have several distinctive features:"
     },
     "etymology": {
-      "origin": "Japanese 河童 (kappa) = 河 (kawa, river) + 童 (pa/warawa, child)",
-      "meaning": "River child",
-      "first_use": "Edo period documentation, earlier oral traditions"
+      "origin": "Unknown",
+      "meaning": "To be documented",
+      "first_use": "Unknown"
     }
   },
-
   "classification": {
     "taxonomy": {
-      "category": "CRYPTID/ENTITY_SPIRIT",
-      "type": "Yokai (Japanese Spirit/Monster)",
-      "subtype": "Water Demon",
-      "variant": "Regional variations across Japan"
+      "category": "|",
+      "type": "| Relationship |",
+      "subtype": "Unknown",
+      "variant": "Unknown"
     },
-    "related_phenomena": [
-      {
-        "id": "yokai",
-        "name": "Yokai (Japanese spirits/monsters)",
-        "relationship": "category",
-        "description": "Kappa is a type of yokai"
-      },
-      {
-        "id": "water-spirits",
-        "name": "Water spirits (global)",
-        "relationship": "similar",
-        "description": "Dangerous water creatures in various cultures"
-      },
-      {
-        "id": "tengu",
-        "name": "Tengu",
-        "relationship": "related-yokai",
-        "description": "Another famous Japanese yokai"
-      }
-    ]
+    "related_phenomena": []
   },
-
   "characteristics": {
     "physical": {
-      "size": {
-        "height": "Child-sized to human-sized (typically 1-1.5 meters)",
-        "build": "Humanoid with turtle features"
-      },
-      "appearance": [
-        "Turtle-like shell on back",
-        "Green, scaly skin (sometimes described as slimy)",
-        "Webbed hands and feet",
-        "Beak-like mouth (turtle or bird-like)",
-        "Bowl-like depression on head (sara)",
-        "Yellow-green coloration (most common)",
-        "Sharp claws",
-        "Sometimes depicted with hair around head bowl"
-      ],
-      "distinctive_features": [
-        {
-          "feature": "Sara (head bowl)",
-          "description": "Bowl-like depression on top of head filled with water",
-          "significance": "Source of kappa's power; if empty, kappa becomes weak or dies",
-          "frequency": "always"
-        },
-        {
-          "feature": "Turtle shell",
-          "description": "Hard shell on back like a turtle",
-          "frequency": "always"
-        },
-        {
-          "feature": "Webbed appendages",
-          "description": "Webbed hands and feet for swimming",
-          "frequency": "always"
-        },
-        {
-          "feature": "Beak",
-          "description": "Beak-like mouth",
-          "frequency": "common"
-        }
-      ]
+      "features": [],
+      "morphology": "See README.md for detailed physical description"
     },
-    "abilities": [
-      {
-        "ability": "Aquatic prowess",
-        "description": "Excellent swimmers, can breathe underwater",
-        "evidence_level": "folklore"
-      },
-      {
-        "ability": "Sumo wrestling",
-        "description": "Love to challenge humans to sumo wrestling",
-        "evidence_level": "folklore"
-      },
-      {
-        "ability": "Pulling victims underwater",
-        "description": "Drown people by pulling them into water",
-        "evidence_level": "folklore"
-      },
-      {
-        "ability": "Shirikodama extraction",
-        "description": "Allegedly pull out victim's shirikodama (mythical organ) through anus",
-        "evidence_level": "folklore",
-        "notes": "Grotesque traditional belief"
-      },
-      {
-        "ability": "Regeneration",
-        "description": "Can regenerate limbs if head bowl stays wet",
-        "evidence_level": "folklore"
-      },
-      {
-        "ability": "Knowledge",
-        "description": "Knowledgeable about medicine and bone-setting",
-        "evidence_level": "folklore"
-      }
-    ],
+    "abilities": [],
     "behavior": {
-      "disposition": "Mischievous to dangerous",
-      "intelligence": "Intelligent, capable of communication and promises",
-      "habitat": "Rivers, ponds, streams, lakes, irrigation canals",
-      "diet": [
-        "Cucumbers (favorite food)",
-        "Eggplant",
-        "Fish",
-        "Blood (in some tales)",
-        "Human organs (shirikodama in legends)"
-      ],
-      "patterns": [
-        "Challenge humans to sumo wrestling",
-        "Pull swimmers underwater",
-        "Target children playing near water",
-        "Respect politeness and etiquette",
-        "Keep promises once made",
-        "Love cucumbers above all"
-      ],
-      "social_structure": "Can live alone or in groups"
+      "activity_period": "unknown",
+      "disposition": "unknown",
+      "habitat_preference": []
+    }
+  },
+  "distribution": {
+    "range": {
+      "description": "Unknown",
+      "continents": [],
+      "countries": [],
+      "regions": []
     },
-    "weaknesses": [
-      {
-        "weakness": "Head bowl (sara)",
-        "description": "If water in head bowl spills, kappa loses power and may die",
-        "exploit": "Make kappa bow (water spills when they bow)"
-      },
-      {
-        "weakness": "Politeness obligation",
-        "description": "Kappa are compelled to return bows, even if it means spilling head water",
-        "exploit": "Bow to kappa, it must bow back"
-      },
-      {
-        "weakness": "Cucumbers",
-        "description": "Love cucumbers so much they can be bribed or distracted",
-        "exploit": "Offer cucumbers for safety"
-      },
-      {
-        "weakness": "Promise-keeping",
-        "description": "Once a promise is made, kappa must keep it",
-        "exploit": "Get kappa to promise to stop harming people"
-      },
-      {
-        "weakness": "Iron",
-        "description": "Dislike or weakness to iron (in some versions)"
+    "hotspots": [],
+    "temporal": {
+      "first_recorded": {
+        "date": "Unknown",
+        "circa": true,
+        "source": "Traditional folklore"
       }
-    ]
-  },
-
-  "cultural_significance": {
-    "traditional_roles": {
-      "water_safety": "Warning to children to stay away from dangerous waters",
-      "drowning_explanation": "Explanation for drowning deaths, especially children",
-      "irrigation_spirits": "Sometimes seen as guardians of rice paddies and irrigation",
-      "medical_knowledge": "In some tales, teach bone-setting to humans"
-    },
-    "cucumber_connection": {
-      "description": "Kappa's love of cucumbers is legendary",
-      "practices": [
-        "Throwing cucumbers into water for protection",
-        "Writing family names on cucumbers before throwing",
-        "Kappamaki (cucumber sushi roll) named after kappa",
-        "Cucumber offerings at shrines"
-      ],
-      "origin": "Various theories about why cucumbers, possibly related to color/shape"
-    },
-    "modern_significance": {
-      "cultural_icon": "One of most recognizable yokai in Japan",
-      "mascots": "Used as municipal mascots, brand characters",
-      "warning_signs": "Kappa images on water safety signs",
-      "tourism": "Kappa statues, museums, festivals in various regions",
-      "media_presence": "Anime, manga, games, films featuring kappa"
     }
   },
-
-  "regional_variations": {
-    "names": [
-      "Kawatarō (river boy) - common variation",
-      "Kawako (river child) - various regions",
-      "Gatarō - Kyushu region",
-      "Kawappa - Tohoku region",
-      "Dangame - some areas"
-    ],
-    "appearance_variations": "Size, color, and exact features vary by region",
-    "behavior_variations": "Some regions emphasize different traits (helpful vs. harmful)"
-  },
-
-  "protection_methods": {
-    "traditional": [
-      {
-        "method": "Bowing",
-        "description": "Bow deeply to kappa; it will bow back and spill head water"
-      },
-      {
-        "method": "Cucumber offering",
-        "description": "Throw cucumbers with family names written on them into water"
-      },
-      {
-        "method": "Politeness",
-        "description": "Be extremely polite; kappa respect etiquette"
-      },
-      {
-        "method": "Stay away from water",
-        "description": "Simply avoid swimming in kappa-inhabited waters"
-      },
-      {
-        "method": "Iron objects",
-        "description": "Carry iron objects for protection (in some traditions)"
-      }
-    ]
-  },
-
-  "famous_tales": [
-    {
-      "title": "The Grateful Kappa",
-      "summary": "Kappa helped by human teaches bone-setting medicine in gratitude",
-      "moral": "Kindness rewarded; kappa keep promises"
+  "history": {
+    "origins": {
+      "cultural_roots": "Unknown",
+      "earliest_accounts": "See README.md for historical details",
+      "folklore_connections": "Unknown"
     },
-    {
-      "title": "The Kappa and the Sumo Wrestler",
-      "summary": "Wrestler tricks kappa by making it bow, spilling head water",
-      "moral": "Intelligence over strength; exploiting weaknesses"
+    "timeline": []
+  },
+  "sightings": {
+    "statistics": {
+      "total_documented": 0,
+      "verified": 0,
+      "disputed": 0,
+      "debunked": 0
     },
-    {
-      "title": "The Cucumber Tribute",
-      "summary": "Village saves children by offering cucumbers to river kappa",
-      "moral": "Negotiation and respect can prevent harm"
+    "notable": [],
+    "database_path": "./sightings/"
+  },
+  "evidence": {
+    "physical": [],
+    "photographic": [],
+    "video": [],
+    "audio": [],
+    "trace": []
+  },
+  "theories": {
+    "paranormal": [],
+    "scientific": [],
+    "skeptical": []
+  },
+  "cultural": {
+    "folklore": {
+      "traditions": [],
+      "stories": [],
+      "beliefs": "See README.md for cultural context"
+    },
+    "popular_culture": {
+      "literature": [],
+      "film_tv": [],
+      "games": [],
+      "other": []
     }
-  ],
-
-  "popular_culture": {
-    "anime_manga": [
-      "Numerous kappa characters in various anime/manga",
-      "Pokémon inspired by kappa",
-      "Studio Ghibli references"
-    ],
-    "films": [
-      "Kappa (1994) - Japanese film",
-      "Various yokai-themed films"
-    ],
-    "games": [
-      "Kappa as characters in Japanese RPGs",
-      "Yokai Watch franchise",
-      "Various video games"
-    ],
-    "food": [
-      "Kappamaki - cucumber sushi roll named after kappa",
-      "Kappa-themed foods and sweets"
-    ],
-    "mascots": [
-      "Municipal mascots in various Japanese cities",
-      "Company mascots",
-      "Water safety campaign mascots"
-    ]
   },
-
-  "cultural_sensitivity": {
-    "note": "Kappa is living Japanese cultural tradition",
-    "respect_guidelines": [
-      "Recognize as important Japanese cultural icon",
-      "Connected to water safety education",
-      "Part of yokai tradition with deep cultural roots",
-      "Modern commercialization balanced with traditional respect",
-      "Not merely a monster but cultural symbol"
-    ],
-    "living_tradition": "Kappa remains part of Japanese cultural identity and folklore"
+  "research": {
+    "researchers": [],
+    "organizations": [],
+    "ongoing_studies": "None documented"
   },
-
-  "evidence_status": {
-    "type": "Folklore and yokai tradition",
-    "claimed_sightings": "Historical folk accounts, no modern credible cryptid claims",
-    "physical_evidence": "None",
-    "cultural_evidence": "Extensive folklore, regional variations, ongoing tradition",
-    "status": "Recognized as folklore/yokai, culturally significant, not cryptozoological pursuit"
-  },
-
-  "sources": [
-    {
-      "id": "foster-2009",
-      "type": "book",
-      "title": "Pandemonium and Parade: Japanese Monsters and the Culture of Yokai",
-      "authors": ["Michael Dylan Foster"],
-      "publication": "University of California Press",
-      "date": "2009",
-      "isbn": "978-0520253629"
-    },
-    {
-      "id": "reider-2010",
-      "type": "book",
-      "title": "Japanese Demon Lore: Oni from Ancient Times to the Present",
-      "authors": ["Noriko T. Reider"],
-      "publication": "Utah State University Press",
-      "date": "2010",
-      "isbn": "978-0874217891"
-    },
-    {
-      "id": "meyer-2015",
-      "type": "book",
-      "title": "The Night Parade of One Hundred Demons: A Field Guide to Japanese Yokai",
-      "authors": ["Matthew Meyer"],
-      "publication": "Self-published",
-      "date": "2015",
-      "isbn": "978-1514139349"
-    }
-  ]
+  "sources": []
 }
