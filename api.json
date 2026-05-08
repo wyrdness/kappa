@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/kappa",
     "maintainers": [
       {
@@ -16,72 +16,163 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "kappa",
     "name": "Kappa",
-    "aliases": [],
-    "category": "|",
-    "subcategory": "| Relationship |",
+    "aliases": [
+      { "name": "河童", "language": "Japanese (kanji)", "meaning": "'River child'" },
+      { "name": "Kawatarō (川太郎)", "language": "Japanese", "meaning": "'River boy'" },
+      { "name": "Kawako (川子)", "language": "Japanese", "meaning": "'River child'" },
+      { "name": "Garappa", "language": "Japanese (Kyushu dialect)", "region": "Kyushu" },
+      { "name": "Suiko (水虎)", "language": "Japanese / Sino-Japanese", "meaning": "'Water tiger'; an aggressive kappa-class water-yokai" },
+      { "name": "Hyōsube", "region": "Kyushu (especially Saga)", "meaning": "Regional kappa-related yokai" }
+    ],
+    "category": "ENTITY_SPIRIT",
+    "subcategory": "Yokai (river spirit)",
     "tags": [
-      "folklore",
-      "mythology"
+      "japanese-folklore",
+      "yokai",
+      "water-spirit",
+      "amphibious",
+      "river",
+      "edo-period",
+      "shirikodama",
+      "cucumber"
     ],
     "status": "documented",
     "description": {
-      "summary": "The **kappa** (河童, \\\"river child\\\") is one of the most famous yokai in Japanese folklore.",
-      "full": "The **kappa** (河童, \\\"river child\\\") is one of the most famous yokai in Japanese folklore. Depicted as amphibious, turtle-like creatures roughly the size of a human child, kappa have several distinctive features:"
+      "summary": "The kappa (河童, 'river child') is one of the most famous yōkai in Japanese folklore: a child-sized amphibious water-spirit with a turtle-like shell, beaked face, and a water-filled dish (sara) on its head whose drying or spilling renders it powerless.",
+      "full": "The kappa (河童, 'river child'; also kawatarō, kawako, garappa, and at least eighty regional names) is a class of water-yokai in Japanese folklore, prototypically the size of a human child, greenish, with a turtle-like carapace, webbed hands and feet, a beaked face, and a circular depression on the crown of the head — the sara — which holds water. The water in the sara is the kappa's source of supernatural power; if it spills or dries out, the kappa is paralysed or killed, which gives rise to the well-known folk defense of bowing deeply (the polite kappa returns the bow, spilling the dish). Kappa are river- and pond-dwelling, associated with sumo wrestling, with attempts to drag horses, cattle, and people into the water, and with the extraction of the mythical 'shirikodama' (尻子玉) — a small ball of life-essence said to lie inside the human anus. They are notoriously fond of cucumbers (giving the name kappamaki to cucumber sushi rolls). Early systematic descriptions appear in the Edo-period encyclopedia Wakan Sansai Zue (和漢三才図会, 1712) by Terajima Ryōan, and the kappa is depicted in Toriyama Sekien's Gazu Hyakki Yagyō (1776). Folkloric documentation continued under modern researchers, especially Yanagita Kunio (1875–1962), whose Tōno Monogatari (遠野物語, 1910) records numerous kappa accounts from Tōno, Iwate, and Lafcadio Hearn (1850–1904), who wrote on kappa in his collections of Japanese folklore. The kappa remains a beloved figure of Japanese popular culture, appearing on signage, in advertising (notably the Kappa beverage and snack brand), in manga, film (Akira Kurosawa's Dreams (1990) and Hayao Miyazaki's Spirited Away (2001) feature kappa-like figures), and as a regional symbol in towns such as Tōno, Ushiku, and Saga."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Japanese kappa (河童) = kawa (川, 'river') + warawa / wappa (童, 'child'); regional variants include kawatarō, kawako, and garappa",
+      "meaning": "'River child'",
+      "first_use": "Recorded in Edo-period literature, including Wakan Sansai Zue (1712); folk usage long predates"
     }
   },
+
   "classification": {
     "taxonomy": {
-      "category": "|",
-      "type": "| Relationship |",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "category": "ENTITY_SPIRIT",
+      "type": "Yokai",
+      "subtype": "Water-yokai (river)",
+      "variant": "Japanese"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "suijin", "name": "Suijin", "relationship": "related", "description": "Shinto water-deity; conceptual ancestor of many kappa traditions" },
+      { "id": "hyosube", "name": "Hyōsube", "relationship": "regional_variant", "description": "Kyushu variant of the kappa, especially around Saga" },
+      { "id": "garappa", "name": "Garappa", "relationship": "regional_variant", "description": "Kyushu kappa with longer limbs" },
+      { "id": "suiko", "name": "Suiko", "relationship": "subset", "description": "Aggressive 'water-tiger' class of kappa-related yokai" },
+      { "id": "vodyanoy", "name": "Vodyanoy", "relationship": "similar", "description": "Slavic male water-spirit; comparable river-dwelling trickster role" },
+      { "id": "nokken", "name": "Nøkken", "relationship": "similar", "description": "Scandinavian water-spirit" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 0.6, "max": 1.2, "unit": "meters", "confidence": "low" },
+      "coloration": ["green", "blue-green", "yellow-green", "red (some regional variants)"],
+      "features": [
+        { "feature": "Sara (head dish)", "description": "Concave depression on the crown of the head holding water; the source of the kappa's strength. If spilled or dried, the kappa is incapacitated", "frequency": "always" },
+        { "feature": "Turtle-like carapace", "description": "Hard, often greenish shell on the back", "frequency": "always" },
+        { "feature": "Beaked mouth", "description": "Sharp, bird-like beak", "frequency": "common" },
+        { "feature": "Webbed hands and feet", "description": "Aquatic adaptations on hands and feet", "frequency": "common" },
+        { "feature": "Greenish skin", "description": "Slick, scaly green or yellow-green skin", "frequency": "common" }
+      ],
+      "morphology": "Bipedal humanoid with reptilian / amphibian features; child-sized stature."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Sumo wrestling", "description": "Kappa are famously fond of sumo and challenge humans to wrestling matches", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Aquatic stealth", "description": "Skilled swimmers; ambush prey from rivers and ponds", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Shirikodama extraction", "description": "Reaches into a victim through the anus to remove the mythical 'shirikodama' (尻子玉), a ball of vital essence", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Bowing-trick vulnerability", "description": "Compulsive politeness: if a human bows, the kappa bows back, spilling the water from its sara and rendering it helpless", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Limb regeneration", "description": "In some traditions, severed kappa arms can be reattached", "frequency": "occasional", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "variable",
+      "disposition": "variable",
+      "social_structure": "solitary",
+      "habitat_preference": ["rivers", "ponds", "rice paddies", "irrigation channels", "lakes", "marshes"],
+      "diet": "Cucumbers (preferred offering), fish, and the shirikodama / blood / liver of human victims",
+      "patterns": [
+        "Most active at dusk and at night",
+        "Strongly territorial in particular pools and river-bends",
+        "Often pacified by offerings of cucumbers (the basis of kappamaki sushi)",
+        "Dragging horses, cattle, and children into water is a recurring motif",
+        "May sometimes be befriended; occasionally portrayed as helpful"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Found throughout Japanese folklore, with strong regional concentrations in Kyushu (garappa, hyōsube) and Tōhoku (Tōno).",
+      "continents": ["Asia"],
+      "countries": ["Japan"],
+      "regions": ["Kyushu", "Tōhoku (Iwate, especially Tōno)", "Kantō", "Kansai", "Shikoku"]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Tōno (遠野)",
+        "location": {
+          "description": "Town and basin in Iwate Prefecture, focus of Yanagita Kunio's foundational folklore collection",
+          "country": "Japan",
+          "region": "Iwate, Tōhoku",
+          "coordinates": { "latitude": 39.3275, "longitude": 141.5347 }
+        },
+        "peak_period": "Edo period–present (folkloric)",
+        "notes": "Site of Yanagita Kunio's Tōno Monogatari (1910); the Kappa-buchi (河童淵) pool is a celebrated folkloric location"
+      },
+      {
+        "name": "Ushiku (牛久市)",
+        "location": {
+          "description": "City in Ibaraki Prefecture",
+          "country": "Japan",
+          "region": "Ibaraki",
+          "coordinates": { "latitude": 35.9803, "longitude": 140.1481 }
+        },
+        "peak_period": "Edo–modern",
+        "notes": "Historically associated with kappa lore; modern Ushiku-numa marsh and city signage feature kappa motifs"
+      },
+      {
+        "name": "Saga Prefecture",
+        "location": {
+          "description": "Saga Prefecture, Kyushu",
+          "country": "Japan",
+          "region": "Kyushu"
+        },
+        "peak_period": "Edo–modern",
+        "notes": "Stronghold of garappa / hyōsube regional variants"
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
-        "circa": true,
-        "source": "Traditional folklore"
-      }
+        "date": "1712",
+        "circa": false,
+        "source": "Terajima Ryōan, Wakan Sansai Zue (1712)"
+      },
+      "peak_activity_periods": [
+        { "period": "Edo period (1603–1868)", "description": "Codification of kappa lore in encyclopedias, kaidan, and Sekien's bestiary" },
+        { "period": "1910–present", "description": "Modern folkloric documentation (Yanagita's Tōno Monogatari) and pop-culture entrenchment" }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Shinto water-deity (suijin) tradition syncretized with Buddhist and continental Asian water-spirit motifs (notably the Chinese suiko 'water tiger').",
+      "earliest_accounts": "Terajima Ryōan's Wakan Sansai Zue (1712) is among the earliest systematic descriptions; folk tradition is much older.",
+      "folklore_connections": "Connected to broader East Asian water-yokai (suiko, hyōsube, garappa), to Shinto suijin cults, and to the global pattern of river-dwelling trickster spirits."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1712", "event": "Terajima Ryōan publishes the encyclopedia Wakan Sansai Zue (和漢三才図会), with a systematic kappa entry", "significance": "Foundational Edo-period reference", "source": "Terajima Ryōan, Wakan Sansai Zue (1712)" },
+      { "date": "1776", "event": "Toriyama Sekien depicts the kappa in Gazu Hyakki Yagyō (画図百鬼夜行)", "significance": "Visual codification", "source": "Toriyama Sekien (1776)" },
+      { "date": "1910-06-14", "event": "Yanagita Kunio publishes Tōno Monogatari (遠野物語), recording numerous kappa stories from Tōno, Iwate", "significance": "Foundational text of modern Japanese folklore studies and kappa documentation", "source": "Yanagita Kunio, Tōno Monogatari (1910)" }
+    ],
+    "modern_era": "The kappa is one of the most recognizable Japanese cultural icons: present on town mascots, in countless manga and anime, in Hayao Miyazaki's and Hayao Kawai's references, and in commercial branding such as the Kappa snack brand (Calbee, since 1964). Tōno's annual Kappa-related tourism and the Kappa Sushi restaurant chain (since 1979) further entrench the figure."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +183,142 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "kappa-evidence-wakan-sansai",
+        "type": "encyclopedia",
+        "name": "Wakan Sansai Zue (和漢三才図会)",
+        "date": "1712",
+        "description": "Edo-period illustrated encyclopedia by Terajima Ryōan with a systematic entry on the kappa.",
+        "status": "verified",
+        "source": "Terajima Ryōan (1712)"
+      },
+      {
+        "id": "kappa-evidence-sekien",
+        "type": "illustrated bestiary",
+        "name": "Gazu Hyakki Yagyō (画図百鬼夜行)",
+        "date": "1776",
+        "description": "Toriyama Sekien's illustrated yokai compendium, depicting the kappa.",
+        "status": "verified",
+        "source": "Toriyama Sekien (1776)"
+      },
+      {
+        "id": "kappa-evidence-tono",
+        "type": "folklore collection",
+        "name": "Tōno Monogatari (遠野物語)",
+        "date": "1910",
+        "description": "Yanagita Kunio's foundational modern folklore collection from Tōno, Iwate, including numerous kappa accounts.",
+        "status": "verified",
+        "source": "Yanagita Kunio (1910)"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
-    "scientific": [],
-    "skeptical": []
+    "paranormal": [
+      {
+        "name": "Shinto water-spirit (suijin) tradition",
+        "description": "The kappa is the popular-folkloric form of older Shinto suijin (water-deity) figures, demoted from formal divinity to trickster yokai over time.",
+        "proponents": ["Yanagita Kunio", "Modern Japanese folklore scholarship"],
+        "evidence_cited": ["Continuity with documented suijin cults", "Regional kappa shrines and offerings"]
+      }
+    ],
+    "scientific": [
+      {
+        "name": "Drowning-cautionary archetype",
+        "description": "Kappa lore plausibly functioned (and continues to function) as a parental warning against playing in dangerous river-pools; the shirikodama-extraction motif is a vivid pedagogical image of drowning.",
+        "proponents": ["Folkloric and anthropological commentators"],
+        "evidence_cited": ["Concentration of kappa stories around dangerous river bends", "Continued use of kappa imagery on Japanese drowning-warning signs"]
+      },
+      {
+        "name": "Misidentification of giant salamanders / soft-shelled turtles",
+        "description": "Some scholars and naturalists have suggested that early kappa reports may reflect encounters with the Japanese giant salamander (Andrias japonicus) or large soft-shelled turtles in remote rivers.",
+        "proponents": ["Naturalist commentators"],
+        "evidence_cited": ["Range of A. japonicus overlapping with kappa-rich folklore regions", "Aquatic, slick-skinned, large-bodied morphology"]
+      }
+    ],
+    "skeptical": [
+      {
+        "name": "Cultural-folkloric figure",
+        "description": "Mainstream understanding treats the kappa as a folkloric and literary figure with no need for cryptozoological commitment; the figure is studied as part of Japanese cultural and religious history.",
+        "proponents": ["Mainstream Japanese folklore studies"],
+        "evidence_cited": ["No verified physical evidence", "Documented literary lineage"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Shinto suijin (water-deity) tradition",
+        "Edo-period kaidan and bestiary tradition",
+        "Tōhoku regional folklore (Tōno Monogatari)",
+        "Kyushu garappa / hyōsube tradition"
+      ],
+      "stories": [
+        "Yanagita Kunio's Tōno kappa episodes (1910)",
+        "The bowing-trick / spilled-sara folk tale",
+        "Tales of kappa drowning horses and children",
+        "Tales of kappa befriending humans after being defeated"
+      ],
+      "beliefs": "Modern Japanese culture treats the kappa as folklore rather than living belief, while integrating it deeply into regional identity, signage, and commercial branding."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "Yanagita Kunio — Tōno Monogatari (1910)",
+        "Akutagawa Ryūnosuke — 'Kappa' (河童, novella, 1927)",
+        "Lafcadio Hearn — Japanese folklore essays (late 19th century)",
+        "Shigeru Mizuki — yokai encyclopedias and 'Kappa no Sanpei' (河童の三平)",
+        "Michael Dylan Foster — The Book of Yōkai (2015)"
+      ],
+      "film_tv": [
+        "Akira Kurosawa — Dreams (1990) — kappa imagery",
+        "Hayao Miyazaki — Spirited Away (2001) — kappa-adjacent river-spirit characters",
+        "Summer Days with Coo (河童のクゥと夏休み, 2007, dir. Keiichi Hara)"
+      ],
+      "games": [
+        "Pokémon — Golduck and Lombre/Ludicolo include kappa influence",
+        "Yo-kai Watch — multiple kappa-derived characters",
+        "Animal Crossing — kappa characters",
+        "Persona series — Kappa demons"
+      ],
+      "music": [],
+      "other": [
+        "Calbee 'Kappa Ebisen' snacks (since 1964)",
+        "Kappa Sushi (kappa-zushi) restaurant chain (since 1979)",
+        "Kappa drowning-warning road signage in Japan",
+        "Tōno's Kappa-buchi pool tourism"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Terajima Ryōan", "affiliation": "Edo-period Japan", "contribution": "Author of Wakan Sansai Zue (1712), with foundational kappa entry", "period": "Early 18th century" },
+      { "name": "Toriyama Sekien", "affiliation": "Edo-period Japan", "contribution": "Illustrator of Gazu Hyakki Yagyō (1776), defining visual canon for the kappa", "period": "Late 18th century" },
+      { "name": "Yanagita Kunio (柳田國男)", "affiliation": "Independent / Tokyo Imperial University", "contribution": "Founder of modern Japanese folklore studies; Tōno Monogatari (1910) is the foundational modern documentation of kappa lore", "period": "1900s–1962" },
+      { "name": "Lafcadio Hearn", "affiliation": "Tokyo Imperial University", "contribution": "Introduced Japanese folklore including kappa to English-language audiences", "period": "1890s–1904" },
+      { "name": "Michael Dylan Foster", "affiliation": "University of California, Davis", "contribution": "Modern English-language yokai studies including 'The Book of Yōkai' (2015)", "period": "2000s–present" }
+    ],
+    "organizations": [
+      { "name": "Tōno Folklore Museum (遠野市立博物館)", "url": "https://tonojuku.com/museum/", "focus": "Custodian of Tōno kappa folklore and Yanagita Kunio materials" }
+    ],
+    "ongoing_studies": "Ongoing scholarship in Japanese folklore studies (民俗学), yokai studies, religious studies, and tourism / heritage studies."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wikipedia-kappa", "type": "website", "title": "Kappa (folklore)", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Kappa_(folklore)", "accessed": "2026-05-07" },
+    { "id": "yanagita-1910", "type": "book", "title": "Tōno Monogatari (遠野物語)", "authors": ["Yanagita Kunio"], "date": "1910" },
+    { "id": "wakan-sansai-1712", "type": "book", "title": "Wakan Sansai Zue (和漢三才図会)", "authors": ["Terajima Ryōan"], "date": "1712" },
+    { "id": "sekien-1776", "type": "book", "title": "Gazu Hyakki Yagyō (画図百鬼夜行)", "authors": ["Toriyama Sekien"], "date": "1776" },
+    { "id": "akutagawa-1927", "type": "book", "title": "Kappa (河童)", "authors": ["Akutagawa Ryūnosuke"], "date": "1927" },
+    { "id": "foster-2015", "type": "book", "title": "The Book of Yōkai: Mysterious Creatures of Japanese Folklore", "authors": ["Michael Dylan Foster"], "publication": "University of California Press", "date": "2015", "isbn": "978-0520271029" }
+  ]
 }
